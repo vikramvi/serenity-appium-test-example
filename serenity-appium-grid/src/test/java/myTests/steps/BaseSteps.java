@@ -21,8 +21,18 @@ public class BaseSteps {
 
 		capa.setCapability("browserName", "");
 		capa.setCapability("platformName", "Android");
-		capa.setCapability("app", "/Users/mariiavitiuk/test_projects/serenity-appium-test-example/APK/app-debug.apk");
+		capa.setCapability("app", "/Users/vikram-anna/Documents/workspace/serenity-appium-test-example/APK/app-debug.apk");
 
+		if (deviceModel.equals("Micromax")) {
+			capa.setCapability("deviceName", "000007CF003ACABB");
+			capa.setCapability("platformVersion","5.1");
+		}
+		
+		if (deviceModel.equals("Emulator1")) {
+			capa.setCapability("deviceName", "emulator-5554");
+			capa.setCapability("platformVersion","6.0");
+		}
+		
 		if (deviceModel.equals("Samsung S5")) {
 			capa.setCapability("deviceName", "879e6464");
 			capa.setCapability("platformVersion","5.0");

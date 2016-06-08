@@ -28,7 +28,7 @@ public class BaseStory {
     @Before
     public void setUp(){
         try {
-            baseSteps.initialisation("Nexus");
+            baseSteps.initialisation("Emulator1");
         } catch (Exception e) {
             e.printStackTrace();
         }
